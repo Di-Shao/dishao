@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PARPi on Personal website of Di Shao</title>
+    <link>https://dishao.netlify.app/categories/parpi/</link>
+    <description>Recent content in PARPi on Personal website of Di Shao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://dishao.netlify.app/categories/parpi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Germline and somatic mutations of multi-gene panel in Chinese patients with epithelial ovarian cancer</title>
+      <link>https://dishao.netlify.app/project/ovarian_cancer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/ovarian_cancer/</guid>
+      <description>Background
+Multiple targeted gene sequencing is seldom performed in both germline and somatic testing for ovarian cancer. This study is to evaluate the specific genetic alterations, including both somatic and germline mutations, in Chinese patients with epithelial ovarian cancer (EOC) in a prospective cohort study.
+Materials and methods
+Mutations in a customed 21-gene panel that included BRCA1 , BRCA2 , and 19 other tumor suppressor genes related to homologous recombination (HR) deficiency or non-HR deficiency were detected by targeted exon capture and next-generation sequencing (NGS) technology across all coding exons and exon-intron (±20 base pairs) boundaries.</description>
+    </item>
+    
+    <item>
+      <title>Homologous recombination deficiency status predicts response to platinum‑based chemotherapy in Chinese patients with high‑grade serous ovarian carcinoma</title>
+      <link>https://dishao.netlify.app/project/hrd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/hrd/</guid>
+      <description>Background Homologous Recombination Deficiency (HRD) is a predictive biomarker for ovarian cancer treated with PARP inhibitors or for breast cancer treated with first-line platinum-based chemotherapy. However, limited research is documented on platinum-based treatment prediction with HRD as a biomarker in ovarian cancer patients, especially in the Chinese population.
+Methods
+We investigated the association between HRD status and the response of platinum-based chemotherapy in 240 Chinese HGSOC patients.
+Results The Pt-sensitive patients showed higher HRD scores than Pt-resistant ones, but this was not significant(median: 42.</description>
+    </item>
+    
+  </channel>
+</rss>

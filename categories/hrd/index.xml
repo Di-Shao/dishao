@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HRD, on Personal website of Di Shao</title>
+    <link>https://dishao.netlify.app/categories/hrd/</link>
+    <description>Recent content in HRD, on Personal website of Di Shao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://dishao.netlify.app/categories/hrd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homologous recombination deficiency status predicts response to platinum‑based chemotherapy in Chinese patients with high‑grade serous ovarian carcinoma</title>
+      <link>https://dishao.netlify.app/project/hrd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/hrd/</guid>
+      <description>Background Homologous Recombination Deficiency (HRD) is a predictive biomarker for ovarian cancer treated with PARP inhibitors or for breast cancer treated with first-line platinum-based chemotherapy. However, limited research is documented on platinum-based treatment prediction with HRD as a biomarker in ovarian cancer patients, especially in the Chinese population.
+Methods
+We investigated the association between HRD status and the response of platinum-based chemotherapy in 240 Chinese HGSOC patients.
+Results The Pt-sensitive patients showed higher HRD scores than Pt-resistant ones, but this was not significant(median: 42.</description>
+    </item>
+    
+  </channel>
+</rss>

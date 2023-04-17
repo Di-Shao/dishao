@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phase II clinical trial, on Personal website of Di Shao</title>
+    <link>https://dishao.netlify.app/categories/phase-ii-clinical-trial/</link>
+    <description>Recent content in Phase II clinical trial, on Personal website of Di Shao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://dishao.netlify.app/categories/phase-ii-clinical-trial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neoadjuvant camrelizumab plus chemotherapy for resectable, locally advanced esophageal squamous cell carcinoma (NIC-ESCC2019) A multicenter, phase 2 study</title>
+      <link>https://dishao.netlify.app/project/nic_escc2019/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/nic_escc2019/</guid>
+      <description>BACKGROUND Optimal treatment for resectable esophageal squamous cell carcinoma (ESCC) is controversial, especially in the context of potential benefit of combining PD-1 blockade with neoadjuvant therapy.
+METHODS This phase 2 study aimed to assess neoadjuvant camrelizumab plus chemotherapy in this population. Patients (clinical stage II-IVA) received two cycles of neoadjuvant chemoimmunotherapy (NIC) with camrelizumab (200 mg on day 1) plus nab-paclitaxel (260 mg/m2 in total on day 1 and day 8) and cisplatin (75 mg/m2 in total on days 1-3) of each 21-day cycle.</description>
+    </item>
+    
+  </channel>
+</rss>

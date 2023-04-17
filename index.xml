@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>邵 迪 on Personal website of Di Shao</title>
+    <link>https://dishao.netlify.app/</link>
+    <description>Recent content in 邵 迪 on Personal website of Di Shao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dishao.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Netlify</title>
+      <link>https://dishao.netlify.app/collection/day02/01-netlify/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/collection/day02/01-netlify/</guid>
+      <description>So far, we&amp;rsquo;ve been leveraging GitHub Pages for publishing. This works great, but for blogdown we&amp;rsquo;ll start using Netlify. Let&amp;rsquo;s start RIGHT NOW with a site we&amp;rsquo;ve already built and published.
+Pre-requisites     Pick either your postcards site, or your distill site from day 01. Refresh your memory- which repository was it again?</description>
+    </item>
+    
+    <item>
+      <title>A GitHub profile</title>
+      <link>https://dishao.netlify.app/collection/day01/01-github/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/collection/day01/01-github/</guid>
+      <description>Profile     https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/personalizing-your-profile
+Pin projects to profile     https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/pinning-items-to-your-profile
+Profile README     This is new! Let&amp;rsquo;s do it:
+https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme</description>
+    </item>
+    
+    <item>
+      <title>Prework</title>
+      <link>https://dishao.netlify.app/collection/prework/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/collection/prework/</guid>
+      <description>Welcome to the Introducing Yourself Online workshop! We look forward to meeting you. Before attending the workshop, please complete the following prework.
+Set up RStudio Cloud     Sign up for a free RStudio Cloud account at https://rstudio.cloud/ before the workshop. I recommend logging in with an existing Google or GitHub account, if you have one (rather than creating a new account with another password you have to remember).</description>
+    </item>
+    
+    <item>
+      <title>A postcard</title>
+      <link>https://dishao.netlify.app/collection/day01/02-postcards/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/collection/day01/02-postcards/</guid>
+      <description>Pre-requisites     First, make sure you have the latest version of the postcards package installed from CRAN:
+install.packages(&amp;quot;postcards&amp;quot;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
+ Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS).  packageVersion(&amp;quot;postcards&amp;quot;) [1] ‘0.2.0’  Create GitHub repo     Online.</description>
+    </item>
+    
+    <item>
+      <title>Using blogdown</title>
+      <link>https://dishao.netlify.app/collection/day02/02-blogdown/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/collection/day02/02-blogdown/</guid>
+      <description>Pre-requisites     First, make sure you have the latest version of the blogdown package installed from CRAN:
+install.packages(&amp;quot;blogdoown&amp;quot;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
+ Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS).  packageVersion(&amp;quot;blogdown&amp;quot;) [1] ‘1.0’  Create GitHub repo     Online.</description>
+    </item>
+    
+    <item>
+      <title>A distill site</title>
+      <link>https://dishao.netlify.app/collection/day01/03-distill/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/collection/day01/03-distill/</guid>
+      <description>Pre-requisites     First, make sure you have the latest version of the distill package installed from CRAN:
+install.packages(&amp;quot;distill&amp;quot;)  Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
+ Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS).  &amp;lt;!-- --&amp;gt; packageVersion(&amp;quot;distill&amp;quot;) [1] ‘1.2’  Create GitHub repo     Online.</description>
+    </item>
+    
+    <item>
+      <title>Warm woolen mittens</title>
+      <link>https://dishao.netlify.app/collection/day02/03-blogdown/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/collection/day02/03-blogdown/</guid>
+      <description>Hi, I&#39;m the here-bot cat! Use me to find your way in your website.
+Here I am: content/collection\day02\03-blogdown\index.md  To remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}
+My content section is: collection  My layout is: single-series   part 2!     does this work?      now for some very cool things     more     get ready!</description>
+    </item>
+    
+    <item>
+      <title>Data Science in Clinical Research -- a modern dive into data analysis with R and Python ecosystem</title>
+      <link>https://dishao.netlify.app/talk/tk4/</link>
+      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/talk/tk4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Circulating tumor DNA methylation profiles enable early diagnosis, prognosis prediction, and screening for colorectal cancer</title>
+      <link>https://dishao.netlify.app/talk/tk1/</link>
+      <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/talk/tk1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>晚期非小细胞肺癌基因组特征及其精准治疗模式的真实世界研究</title>
+      <link>https://dishao.netlify.app/project/clinical_benefit/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/clinical_benefit/</guid>
+      <description>01研究设计     本研究为单中心、回顾性队列研究。自2016年1月至2019年10月共纳入233例NSCLC患者。利用688 panel对肿瘤组织样本进行基于目标区域捕获测序的突变谱检测。其中171例临床病理和随访资料完整的患者纳入生存分析。
+02研究结果     驱动突变的基因分布
+驱动突变的频率与其他研究相似。最高频突变为EGFR（51％），其次是KRAS（9％），PIK3CA（7％），ALK（7％），MET（6％）和BRAF（5％）（图1）。ALK融合，HER2插入，MEK突变，KIF5B-RET和CD74-ROS1融合与其他驱动突变互斥。TMB high在年轻女性和吸烟患者中更为常见。 TP53，EGFR，BRAF，ROSI和RET突变与TMB状态显著相关。
+图1：233例NSCLC患者基因组和临床病理特征EGFR突变不同亚型TKI治疗预后差异明显
+携带KRAS和TP53突变的患者的OS较短（mOS：11.3 vs 24.0个月， P = 0.16和mOS：18.7 vs 28.7个月，P = 0.018）（图2）；可靶向治疗（EGFR和ALK TKIs）的患者的OS较其他患者更长，另外发现携带EFGR各个突变亚型的患者接受TKI治疗的效果并不相同 （图 3）。免疫相关生物标志物方面， TMB-low和较长的OS相关（mOS：18.4 vs 27.7个月； P = 0.061）； MSI-low和MSS两组间的OS没有显著差异。
+图2：以EFGR,TP53和KRAS突变状态以及TMB分层的患者的总体生存曲线图3：根据是否接受靶向治疗和EGFR突变亚型分层的总生存曲线EGFR共突变影响EGFR TKI治疗效果
+共检测到86例EGFR突变的肿瘤，其中最常见的共突变为TP53突变（64%）和PIK3CA突变 （7.0%）。 单因素分析和多因素Cox比例风险模型都发现TP53共突变与较短的OS相关；PIK3CA突变也与OS有关，但差异并不显著（P = 0.08）（图4）。
+图4：EGFR共突变对EGFR-TKIs治疗效果的影响03小结     本项研究全面分析了中国人群非小细胞肺癌的驱动突变和基因组特征，评估了上述特征对于预测疾病预后和指导个体化治疗的作用，并在真实世界中证实了基于基因组全景图谱的精准治疗对提高非小细胞肺癌总生存的临床意义。
+ 全文链接</description>
+    </item>
+    
+    <item>
+      <title>a learning notes of gtsummary</title>
+      <link>https://dishao.netlify.app/blog/gtsummary/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/blog/gtsummary/</guid>
+      <description># install.packages(&amp;quot;gtsummary&amp;quot;)library(gtsummary)library(tidyverse)Basic UsageYou can also embed plots, for example:
+head(trial)## # A tibble: 6 x 8## trt age marker stage grade response death ttdeath## &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt;## 1 Drug A 23 0.16 T1 II 0 0 24 ## 2 Drug B 9 1.11 T2 I 1 0 24 ## 3 Drug A 31 0.277 T1 II 0 0 24 ## 4 Drug A NA 2.</description>
+    </item>
+    
+    <item>
+      <title>NSCLC免疫治疗临床研究最新进展</title>
+      <link>https://dishao.netlify.app/talk/tk3/</link>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/talk/tk3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prevalence of hereditary breast and ovarian cancer (HBOC) predisposition gene mutations among 882 HBOC high-risk Chinese individuals</title>
+      <link>https://dishao.netlify.app/project/hboc/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/hboc/</guid>
+      <description>Abstract
+background     Identification of deleterious variants in hereditary breast and ovarian cancer (HBOC) susceptibility genes allows for increased clinical surveillance and early detection, and could predict the response to poly (ADP-ribose) polymerase (PARP) inhibitor in patients with advanced ovarian carcinomas.
+methods     To determine the prevalence and clinical prediction fac- tors for HBOC syndrome, 882 selected individuals underwent multigene panel testing for HBOC risk assessment during the period from January 2015 to March 2018.</description>
+    </item>
+    
+    <item>
+      <title>ctDNA在结直肠癌检测的应用和进展</title>
+      <link>https://dishao.netlify.app/talk/tk2/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/talk/tk2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TidyTuesday学习笔记--Nobel_Laureate</title>
+      <link>https://dishao.netlify.app/blog/nobel_laureate/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/blog/nobel_laureate/</guid>
+      <description>原视频地址：https://www.bilibili.com/video/BV1P4411m75N?from=search&amp;amp;seid=7741503924513681460&amp;amp;spm_id_from=333.337.0.0
+Load needed packageslibrary(tidyverse)library(lubridate)Get the data!nobel_winners &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv&amp;quot;) %&amp;gt;% distinct(full_name, prize_year, category, .keep_all = T) %&amp;gt;% mutate(decade = 10*(prize_year%/%10),age = prize_year - year(birth_date))nobel_winner_all_pubs &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winner_all_pubs.csv&amp;quot;) %&amp;gt;% mutate(prize_decade = 10*(prize_year %/% 10))Winners per decade by categorynobel_winners %&amp;gt;% group_by(category,decade) %&amp;gt;%summarise(winners = n(),winners_per_year = winners / n_distinct(prize_year)) %&amp;gt;% ggplot(aes(decade, winners_per_year, color= category)) + geom_line() +expand_limits(y=0)## `summarise()` has grouped output by &amp;#39;category&amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://dishao.netlify.app/contact/</link>
+      <pubDate>Mon, 25 Feb 2019 13:38:41 -0600</pubDate>
+      
+      <guid>https://dishao.netlify.app/contact/</guid>
+      <description>** Contact page don&amp;rsquo;t contain a body, just the front matter above. See form.html in the layouts folder.
+Formspree requires a (free) account and new form to be set up. The link is made on the final published url in the field: Restrict to Domain. It is possible to register up to 2 emails free and you can select which one you want the forms to go to within Formspree in the Settings tab.</description>
+    </item>
+    
+    <item>
+      <title>Typography Styles &amp; Element Examples</title>
+      <link>https://dishao.netlify.app/elements/</link>
+      <pubDate>Mon, 18 Feb 2019 12:27:33 -0600</pubDate>
+      
+      <guid>https://dishao.netlify.app/elements/</guid>
+      <description>Font Sizes   A A A A A A A A   6rem
+(96px) 5rem
+(80px) 3rem
+(48px) 2.25rem
+(36px) 1.5rem
+(24px) 1.25rem
+(20px) 1rem
+(16px) .875rem
+(14px)     Type Samples Head&amp;shy;line Sub&amp;shy;head&amp;shy;line Level 1 Heading One page to rule them all...well, not really. This page displays sample typography and page elements to illustrate their style. Things like headings and paragraphs showing the beautiful type scale, form elements, tabular data, and image layouts just to name a few.</description>
+    </item>
+    
+    <item>
+      <title>Comprehensive genomic profiling of lung cancer using a validated panel to explore therapeutic targets in East Asian patients</title>
+      <link>https://dishao.netlify.app/project/chinese_patient/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/chinese_patient/</guid>
+      <description>Background
+People of East Asian ethnicity have a different prevalence of and show unique clinical characteristics and tumor histology of oncogenic mutations. However,only limited studies have explored the landscape of genomic alterations in lung adenocarcinoma derived from Asian patients thus far.
+Methods
+In this single-center study,with an aim to elucidate the mutational profile of lung cancer in people of Chinese ethnicity and to use the obtained information to guide decision-making for treatment, we employed a well-validated assay to perform comprehensive genomic characterization of tumor specimens from 306 Chinese lung cancer patients.</description>
+    </item>
+    
+    <item>
+      <title>A targeted next-generation sequencing method for identifying clinically relevant mutation profiles in lung adenocarcinoma</title>
+      <link>https://dishao.netlify.app/project/cpg_method/</link>
+      <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/cpg_method/</guid>
+      <description>Backgroud
+Molecular profiling of lung cancer has become essential for prediction of an individual’s response to targeted therapies. Next-generation sequencing (NGS) is a promising technique for routine diagnostics, but has not been sufficiently evaluated in terms of feasibility, reliability, cost and capacity with routine diagnostic formalin-fixed, paraffin-embedded (FFPE) materials.
+Methods
+Here, we report the validation and application of a test based on Ion Proton technology for the rapid characterisation of single nucleotide variations (SNVs), short insertions and deletions (InDels), copy number variations (CNVs), and gene rearrangements in 145 genes with FFPE clinical specimens.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dishao.netlify.app/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/cv/</guid>
+      <description>详聊请加我微信
+ download a pdf of this cv</description>
+    </item>
+    
+    <item>
+      <title>Germline and somatic mutations of multi-gene panel in Chinese patients with epithelial ovarian cancer</title>
+      <link>https://dishao.netlify.app/project/ovarian_cancer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/ovarian_cancer/</guid>
+      <description>Background
+Multiple targeted gene sequencing is seldom performed in both germline and somatic testing for ovarian cancer. This study is to evaluate the specific genetic alterations, including both somatic and germline mutations, in Chinese patients with epithelial ovarian cancer (EOC) in a prospective cohort study.
+Materials and methods
+Mutations in a customed 21-gene panel that included BRCA1 , BRCA2 , and 19 other tumor suppressor genes related to homologous recombination (HR) deficiency or non-HR deficiency were detected by targeted exon capture and next-generation sequencing (NGS) technology across all coding exons and exon-intron (±20 base pairs) boundaries.</description>
+    </item>
+    
+    <item>
+      <title>Homologous recombination deficiency status predicts response to platinum‑based chemotherapy in Chinese patients with high‑grade serous ovarian carcinoma</title>
+      <link>https://dishao.netlify.app/project/hrd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/hrd/</guid>
+      <description>Background Homologous Recombination Deficiency (HRD) is a predictive biomarker for ovarian cancer treated with PARP inhibitors or for breast cancer treated with first-line platinum-based chemotherapy. However, limited research is documented on platinum-based treatment prediction with HRD as a biomarker in ovarian cancer patients, especially in the Chinese population.
+Methods
+We investigated the association between HRD status and the response of platinum-based chemotherapy in 240 Chinese HGSOC patients.
+Results The Pt-sensitive patients showed higher HRD scores than Pt-resistant ones, but this was not significant(median: 42.</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>https://dishao.netlify.app/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/license/</guid>
+      <description>My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.
+  </description>
+    </item>
+    
+    <item>
+      <title>Neoadjuvant camrelizumab plus chemotherapy for resectable, locally advanced esophageal squamous cell carcinoma (NIC-ESCC2019) A multicenter, phase 2 study</title>
+      <link>https://dishao.netlify.app/project/nic_escc2019/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/nic_escc2019/</guid>
+      <description>BACKGROUND Optimal treatment for resectable esophageal squamous cell carcinoma (ESCC) is controversial, especially in the context of potential benefit of combining PD-1 blockade with neoadjuvant therapy.
+METHODS This phase 2 study aimed to assess neoadjuvant camrelizumab plus chemotherapy in this population. Patients (clinical stage II-IVA) received two cycles of neoadjuvant chemoimmunotherapy (NIC) with camrelizumab (200 mg on day 1) plus nab-paclitaxel (260 mg/m2 in total on day 1 and day 8) and cisplatin (75 mg/m2 in total on days 1-3) of each 21-day cycle.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>communication on Personal website of Di Shao</title>
+    <link>https://dishao.netlify.app/categories/communication/</link>
+    <description>Recent content in communication on Personal website of Di Shao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dishao.netlify.app/categories/communication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>a learning notes of gtsummary</title>
+      <link>https://dishao.netlify.app/blog/gtsummary/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/blog/gtsummary/</guid>
+      <description># install.packages(&amp;quot;gtsummary&amp;quot;)library(gtsummary)library(tidyverse)Basic UsageYou can also embed plots, for example:
+head(trial)## # A tibble: 6 x 8## trt age marker stage grade response death ttdeath## &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt;## 1 Drug A 23 0.16 T1 II 0 0 24 ## 2 Drug B 9 1.11 T2 I 1 0 24 ## 3 Drug A 31 0.277 T1 II 0 0 24 ## 4 Drug A NA 2.</description>
+    </item>
+    
+    <item>
+      <title>TidyTuesday学习笔记--Nobel_Laureate</title>
+      <link>https://dishao.netlify.app/blog/nobel_laureate/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/blog/nobel_laureate/</guid>
+      <description>原视频地址：https://www.bilibili.com/video/BV1P4411m75N?from=search&amp;amp;seid=7741503924513681460&amp;amp;spm_id_from=333.337.0.0
+Load needed packageslibrary(tidyverse)library(lubridate)Get the data!nobel_winners &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv&amp;quot;) %&amp;gt;% distinct(full_name, prize_year, category, .keep_all = T) %&amp;gt;% mutate(decade = 10*(prize_year%/%10),age = prize_year - year(birth_date))nobel_winner_all_pubs &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winner_all_pubs.csv&amp;quot;) %&amp;gt;% mutate(prize_decade = 10*(prize_year %/% 10))Winners per decade by categorynobel_winners %&amp;gt;% group_by(category,decade) %&amp;gt;%summarise(winners = n(),winners_per_year = winners / n_distinct(prize_year)) %&amp;gt;% ggplot(aes(decade, winners_per_year, color= category)) + geom_line() +expand_limits(y=0)## `summarise()` has grouped output by &amp;#39;category&amp;#39;.</description>
+    </item>
+    
+  </channel>
+</rss>

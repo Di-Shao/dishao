@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.85.0" />
+<title>TidyTuesday学习笔记--Nobel_Laureate | Personal website of Di Shao</title>
+
+
+<meta property="twitter:site" content="@apreshill">
+<meta property="twitter:creator" content="@apreshill">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="使用TidyTuesday数据练习tidyverse">
+
+
+<meta property="og:site_name" content="Personal website of Di Shao">
+<meta property="og:title" content="TidyTuesday学习笔记--Nobel_Laureate | Personal website of Di Shao">
+<meta property="og:description" content="使用TidyTuesday数据练习tidyverse" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="https://dishao.netlify.app/blog/nobel_laureate/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="https://dishao.netlify.app/blog/nobel_laureate/featured.png" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://dishao.netlify.app/blog/nobel_laureate/featured.png" >
+    
+    
+  <meta itemprop="name" content="TidyTuesday学习笔记--Nobel_Laureate">
+<meta itemprop="description" content="原视频地址：https://www.bilibili.com/video/BV1P4411m75N?from=search&amp;seid=7741503924513681460&amp;spm_id_from=333.337.0.0
+Load needed packageslibrary(tidyverse)library(lubridate)Get the data!nobel_winners &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv&quot;) %&gt;% distinct(full_name, prize_year, category, .keep_all = T) %&gt;% mutate(decade = 10*(prize_year%/%10),age = prize_year - year(birth_date))nobel_winner_all_pubs &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winner_all_pubs.csv&quot;) %&gt;% mutate(prize_decade = 10*(prize_year %/% 10))Winners per decade by categorynobel_winners %&gt;% group_by(category,decade) %&gt;%summarise(winners = n(),winners_per_year = winners / n_distinct(prize_year)) %&gt;% ggplot(aes(decade, winners_per_year, color= category)) &#43; geom_line() &#43;expand_limits(y=0)## `summarise()` has grouped output by &#39;category&#39;."><meta itemprop="datePublished" content="2019-05-14T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-05-14T00:00:00+00:00" />
+<meta itemprop="wordCount" content="642"><meta itemprop="image" content="https://dishao.netlify.app/blog/nobel_laureate/featured.png">
+<meta itemprop="keywords" content="" />
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/icons8-cancer-64.png" type="image/x-icon">
+  <link rel="icon" href="/img/icons8-cancer-64.png" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.c41989e55e447ba851529faee9089cf175da56ad7aa754b67d2288a69ba974e6.css" integrity="sha256-xBmJ5V5Ee6hRUp&#43;u6Qic8XXaVq16p1S2fSKIppupdOY=" media="screen">
+  
+  
+  <script src="/panelset.min.078a92db9bd3228df502db3d9e0453c3cf3d910abe3f8deca0ad196c7071ad41.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.38a0323c5b0bbb611c4874ba2d8fdaba57d20cc2b0d704b30250c235ba8b6d49.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container single">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="https://dishao.netlify.app" title="Home">
+      <img src="/img/6745552_preview.png" class="dib db-l h2 w-auto" alt="Personal website of Di Shao">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About Me">About</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/blog/" title="Blog">Blog</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Talks">Talks</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/cv/" title="CV">CV</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">TidyTuesday学习笔记--Nobel_Laureate</h1>
+        
+        <p class="f6 measure lh-copy mv1">By Di Shao in <a href="https://dishao.netlify.app/categories/communication">communication</a> </p>
+        <p class="f7 db mv0 ttu">May 14, 2019</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        
+<script src="https://dishao.netlify.app/blog/nobel_laureate/index_files/header-attrs/header-attrs.js"></script>
+
+
+<p>原视频地址：<a href="https://www.bilibili.com/video/BV1P4411m75N?from=search&amp;seid=7741503924513681460&amp;spm_id_from=333.337.0.0" class="uri">https://www.bilibili.com/video/BV1P4411m75N?from=search&amp;seid=7741503924513681460&amp;spm_id_from=333.337.0.0</a></p>
+<iframe src="//player.bilibili.com/player.html?aid=66165578&amp;bvid=BV1P4411m75N&amp;cid=114760204&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+</iframe>
+<div id="load-needed-packages" class="section level2">
+<h2>Load needed packages</h2>
+<pre class="r"><code>library(tidyverse)
+library(lubridate)</code></pre>
+</div>
+<div id="get-the-data" class="section level2">
+<h2>Get the data!</h2>
+<pre class="r"><code>nobel_winners &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv&quot;) %&gt;% 
+  distinct(full_name, prize_year, category, .keep_all = T) %&gt;% 
+  mutate(decade = 10*(prize_year%/%10),
+         age = prize_year - year(birth_date))
+nobel_winner_all_pubs &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winner_all_pubs.csv&quot;) %&gt;% 
+  mutate(prize_decade = 10*(prize_year %/% 10))</code></pre>
+</div>
+<div id="winners-per-decade-by-category" class="section level2">
+<h2>Winners per decade by category</h2>
+<pre class="r"><code>nobel_winners %&gt;% 
+  group_by(category,decade) %&gt;%
+  summarise(winners = n(),
+            winners_per_year = winners / n_distinct(prize_year)) %&gt;% 
+  ggplot(aes(decade, winners_per_year, color= category)) + 
+  geom_line() +
+  expand_limits(y=0)</code></pre>
+<pre><code>## `summarise()` has grouped output by &#39;category&#39;. You can override using the `.groups` argument.</code></pre>
+<p><img src="https://dishao.netlify.app/blog/nobel_laureate/index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>nobel_winners %&gt;% 
+  group_by(full_name) %&gt;% 
+  mutate(prizes = n(),
+         distinct_prizes = n_distinct(category)
+         ) %&gt;% 
+  arrange(desc(prizes), full_name)</code></pre>
+<pre><code>## # A tibble: 911 x 22
+## # Groups:   full_name [904]
+##    prize_year category  prize motivation   prize_share laureate_id laureate_type
+##         &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt; &lt;chr&gt;        &lt;chr&gt;             &lt;dbl&gt; &lt;chr&gt;        
+##  1       1917 Peace     The ~  &lt;NA&gt;        1/1                 482 Organization 
+##  2       1944 Peace     The ~  &lt;NA&gt;        1/1                 482 Organization 
+##  3       1963 Peace     The ~  &lt;NA&gt;        1/2                 482 Organization 
+##  4       1958 Chemistry The ~ &quot;\&quot;for his ~ 1/1                 222 Individual   
+##  5       1980 Chemistry The ~ &quot;\&quot;for thei~ 1/4                 222 Individual   
+##  6       1956 Physics   The ~ &quot;\&quot;for thei~ 1/3                  66 Individual   
+##  7       1972 Physics   The ~ &quot;\&quot;for thei~ 1/3                  66 Individual   
+##  8       1954 Chemistry The ~ &quot;\&quot;for his ~ 1/1                 217 Individual   
+##  9       1962 Peace     The ~  &lt;NA&gt;        1/1                 217 Individual   
+## 10       1903 Physics   The ~ &quot;\&quot;in recog~ 1/4                   6 Individual   
+## # ... with 901 more rows, and 15 more variables: full_name &lt;chr&gt;,
+## #   birth_date &lt;date&gt;, birth_city &lt;chr&gt;, birth_country &lt;chr&gt;, gender &lt;chr&gt;,
+## #   organization_name &lt;chr&gt;, organization_city &lt;chr&gt;,
+## #   organization_country &lt;chr&gt;, death_date &lt;date&gt;, death_city &lt;chr&gt;,
+## #   death_country &lt;chr&gt;, decade &lt;dbl&gt;, age &lt;dbl&gt;, prizes &lt;int&gt;,
+## #   distinct_prizes &lt;int&gt;</code></pre>
+</div>
+<div id="nobel-prize-gender-distribution" class="section level2">
+<h2>Nobel prize gender distribution</h2>
+<pre class="r"><code>nobel_winners %&gt;% 
+  count(decade,
+        category,
+        gender = coalesce(gender, laureate_type)) %&gt;% 
+  ggplot(aes(decade, n, fill = gender)) +
+  geom_col() +
+  facet_wrap(~ category) +
+  labs(x = &quot;Decade&quot;,
+       y = &quot;# of nobel prize winners&quot;,
+       fill = &quot;Gender&quot;,
+       title =&quot;Nobel prize gender distribution&quot;)</code></pre>
+<p><img src="https://dishao.netlify.app/blog/nobel_laureate/index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+<div id="nobel-prize-age-distribution" class="section level2">
+<h2>Nobel prize age distribution</h2>
+<pre class="r"><code>nobel_winners %&gt;% 
+  mutate(category = fct_reorder(category, age, na.rm = T)) %&gt;% 
+  ggplot(aes(category, age)) +
+  geom_boxplot() +
+  coord_flip()</code></pre>
+<pre><code>## Warning: Removed 30 rows containing non-finite values (stat_boxplot).</code></pre>
+<p><img src="https://dishao.netlify.app/blog/nobel_laureate/index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+</div>
+<div id="trend-of-winners-age" class="section level2">
+<h2>Trend of winner’s age</h2>
+<pre class="r"><code>nobel_winners %&gt;% 
+  filter(!is.na(age)) %&gt;% 
+  group_by(decade, category) %&gt;% 
+  summarise(average_age = mean(age),
+            median_age = median(age)) %&gt;% 
+  ggplot(aes(decade,average_age, color = category)) +
+  geom_line() </code></pre>
+<pre><code>## `summarise()` has grouped output by &#39;decade&#39;. You can override using the `.groups` argument.</code></pre>
+<p><img src="https://dishao.netlify.app/blog/nobel_laureate/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="nobel-prize-country-distribution" class="section level2">
+<h2>Nobel prize country distribution</h2>
+<pre class="r"><code>nobel_winners %&gt;% 
+  filter(!is.na(birth_country)) %&gt;% 
+  count(category, 
+        birth_country = fct_lump(birth_country, 9),
+        sort = T) %&gt;% 
+  ggplot(aes(birth_country, n, fill=category)) +
+  geom_col() +
+  facet_wrap(~ category) +
+  coord_flip()</code></pre>
+<p><img src="https://dishao.netlify.app/blog/nobel_laureate/index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<pre class="r"><code>winner_summarized &lt;- nobel_winner_all_pubs %&gt;% 
+  filter(pub_year &lt;= prize_year) %&gt;% 
+  group_by(laureate_id,
+           laureate_name,
+           prize_year,
+           category,
+           prize_decade) %&gt;% 
+  summarise(paper_before_prize = n(),
+            paper_before_prize_5_years = sum(pub_year &gt;= prize_year -5),
+            median_paper_age = median(prize_year - pub_year),
+            winning_paper_age = mean((prize_year - pub_year)[is_prize_winning_paper == &quot;YES&quot;])) </code></pre>
+<pre><code>## `summarise()` has grouped output by &#39;laureate_id&#39;, &#39;laureate_name&#39;, &#39;prize_year&#39;, &#39;category&#39;. You can override using the `.groups` argument.</code></pre>
+</div>
+<div id="time-between-when-paper-was-published-and-won-prize" class="section level2">
+<h2>Time between when paper was published and won prize</h2>
+<pre class="r"><code>winner_summarized %&gt;% 
+  group_by(prize_decade,
+           category) %&gt;% 
+  summarize(average_papers = mean(paper_before_prize),
+            average_paper_age = mean(median_paper_age),
+            average_winning_paper_age = mean(winning_paper_age)) %&gt;% 
+  ggplot(aes(prize_decade,average_winning_paper_age, color = category )) +
+  geom_line() +
+  labs(x = &quot;Prize Year&quot;,
+       y = &quot;Time between when paper was published and won prize&quot;) +
+  expand_limits(y = 0)</code></pre>
+<pre><code>## `summarise()` has grouped output by &#39;prize_decade&#39;. You can override using the `.groups` argument.</code></pre>
+<p><img src="https://dishao.netlify.app/blog/nobel_laureate/index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+</div>
+<div id="positon_in_career-when-getting-the-prize" class="section level2">
+<h2>positon_in_career when getting the prize</h2>
+<pre class="r"><code>pubs_enriched &lt;- nobel_winner_all_pubs %&gt;% 
+  group_by(laureate_id, category, prize_year) %&gt;% 
+  mutate(paper_before = rank(pub_year, ties.method = &quot;first&quot;) - 1,
+         total_paper = n(),
+         position_in_career = paper_before / total_paper,
+         first_pub_year = min(pub_year)) %&gt;% 
+  ungroup()
+
+
+pubs_enriched %&gt;% 
+  filter(is_prize_winning_paper == &quot;YES&quot;) %&gt;% 
+  group_by(prize_decade, category) %&gt;% 
+  summarize(average_positon_in_career = mean(position_in_career)) %&gt;% 
+  ggplot(aes(prize_decade, average_positon_in_career)) +
+  geom_line(aes(color = category)) +
+  scale_y_continuous(labels = scales::percent_format())</code></pre>
+<pre><code>## `summarise()` has grouped output by &#39;prize_decade&#39;. You can override using the `.groups` argument.</code></pre>
+<p><img src="https://dishao.netlify.app/blog/nobel_laureate/index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+</div>
+<div id="positon-in-their-publishing-career" class="section level2">
+<h2>positon in their publishing career</h2>
+<pre class="r"><code>pubs_enriched %&gt;% 
+  filter(pub_year - first_pub_year &lt; 75,
+         prize_year &gt;= 1900,
+         prize_year &lt;= 2000) %&gt;%
+  ggplot(aes(pub_year - first_pub_year, fill = is_prize_winning_paper)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ category)  +
+  labs(x = &quot;Years into their publishing career&quot;)</code></pre>
+<p><img src="https://dishao.netlify.app/blog/nobel_laureate/index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+</div>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">May 14, 2019</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">4 minute read, 642 words</dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Categories:</dt>
+    <dd class="fw5 ml0"> <a href="https://dishao.netlify.app/categories/communication">communication</a> </dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="prev dtc pr2 tl v-top fw6"
+    href="https://dishao.netlify.app/blog/gtsummary/">&larr; a learning notes of gtsummary</a>
+  
+  
+  
+</div>
+
+      </footer>
+    </article>
+    
+      
+<div class="post-comments pa0 pa4-l mt4">
+  
+  <script src="https://utteranc.es/client.js"
+          repo="apreshill/apero"
+          issue-term="pathname"
+          theme="boxy-light"
+          label="comments :crystal_ball:"
+          crossorigin="anonymous"
+          async
+          type="text/javascript">
+  </script>
+  
+</div>
+
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2023 Di Shao, Shenzhen
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.jianguoyun.com/p/DX1SvlkQ98bmBRjO6pcE" title="weixin" target="_blank" rel="noopener">
+      <i class="fab fa-weixin fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.linkedin.com/in/%E8%BF%AA-%E9%82%B5-0a68259a/" title="linkedin" target="_blank" rel="noopener">
+      <i class="fab fa-linkedin fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://orcid.org/0000-0002-1485-2074" title="orcid" target="_blank" rel="noopener">
+      <i class="ai ai-orcid fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/Di-Shao" title="github" target="_blank" rel="noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/blog/index.xml" title="rss" >
+      <i class="fas fa-rss fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="/license/" title="License">License</a>
+      
+      <a class="dib pv1 ph2 link" href="/contact/" title="Contact form">Contact</a>
+      
+    </div>
+  </nav>
+</footer>
+
+      </div>
+    </body>
+</html>

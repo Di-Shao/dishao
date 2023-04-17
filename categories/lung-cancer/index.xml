@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lung cancer, on Personal website of Di Shao</title>
+    <link>https://dishao.netlify.app/categories/lung-cancer/</link>
+    <description>Recent content in lung cancer, on Personal website of Di Shao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 03 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://dishao.netlify.app/categories/lung-cancer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A targeted next-generation sequencing method for identifying clinically relevant mutation profiles in lung adenocarcinoma</title>
+      <link>https://dishao.netlify.app/project/cpg_method/</link>
+      <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishao.netlify.app/project/cpg_method/</guid>
+      <description>Backgroud
+Molecular profiling of lung cancer has become essential for prediction of an individual’s response to targeted therapies. Next-generation sequencing (NGS) is a promising technique for routine diagnostics, but has not been sufficiently evaluated in terms of feasibility, reliability, cost and capacity with routine diagnostic formalin-fixed, paraffin-embedded (FFPE) materials.
+Methods
+Here, we report the validation and application of a test based on Ion Proton technology for the rapid characterisation of single nucleotide variations (SNVs), short insertions and deletions (InDels), copy number variations (CNVs), and gene rearrangements in 145 genes with FFPE clinical specimens.</description>
+    </item>
+    
+  </channel>
+</rss>
